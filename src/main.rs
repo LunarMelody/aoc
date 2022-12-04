@@ -1,5 +1,6 @@
 mod day1;
 mod day2;
+mod day3;
 
 use clap::Parser;
 
@@ -22,6 +23,10 @@ fn main() {
             day2::solution::part1();
             day2::solution::part2();
         },
+        3 => {
+            day3::solution::part1();
+            day3::solution::part2();
+        }
         _ => panic!("I didn't solve this :(")
     }
 }
